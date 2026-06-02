@@ -1,0 +1,15 @@
+# Built packages and binary game assets (ship via Releases, don't track)
+*.pak
+*.dds
+*.gr2
+
+# Extraction / scratch / build output
+/extract/
+/build/
+/_temp/
+*.tmp
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
