@@ -13,3 +13,6 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# LibreOffice lock files
+.~lock.*#

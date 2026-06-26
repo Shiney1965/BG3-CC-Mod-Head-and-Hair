@@ -1,0 +1,75 @@
+[size=5][b]CCNS — CC Hair & Head Search[/b][/size]
+
+[b]Name labels, mod-of-origin info, tile numbers, and an in-game search panel for the character-creation hair and head pickers.[/b]
+
+If you run a lot of hair and head mods, you have probably scrolled through hundreds of near-identical thumbnails with no idea which mod a style came from or where it was in the grid. CCNS puts a readable [b]name[/b] and [b]source mod[/b] under every hair/head tile, numbers the modded ones, and adds a [b]search box[/b] that filters by name or by mod and walks you through the matches.
+
+[line]
+
+[size=4][b]Features[/b][/size]
+[list]
+[*][b]Name label on every hair and head tile[/b] — single line, trimmed if long; full name on hover.
+[*][b]Mod-of-origin line[/b] under the name (e.g. Lydia's Heads, HairUnlocked, Poesielibre's Heads). Base-game options read as "Vanilla."
+[*][b]Tile numbers[/b] on modded hair/head tiles, so search results map to a spot in the grid.
+[*][b]In-game search panel[/b] — filter by name or source mod, click a result to apply it instantly, or step through matches with Previous / Next.
+[*][b]Brighter selection ring[/b] on the active tile.
+[*][b]Keyboard and controller[/b] supported.
+[*][b]Zero gameplay impact[/b] — cosmetic / informational only; nothing is written to your save.
+[/list]
+
+[line]
+
+[size=4][b]Requirements[/b][/size]
+[list]
+[*]Baldur's Gate 3, Patch 8 or later.
+[*][b]BG3 Script Extender[/b] (version 29+). Required — drives the labels, numbering, and search panel.
+[*][b]BG3 ImprovedUI[/b] — the Patch 8 fork (mod [b]16649[/b]). Required.
+[*]A mod manager (e.g. BG3 Mod Manager) — strongly recommended, because CCNS must be [b]active in your load order[/b] for its script to run.
+[/list]
+
+[line]
+
+[size=4][b]How to use[/b][/size]
+[list]
+[*]Open / close the search panel with [b]Ctrl + Shift + H[/b] on any character-creation screen (it also auto-opens in New Game character creation).
+[*][b]Type[/b] to filter by hair/head name or source mod.
+[*][b]Click[/b] a result to apply it; or use [b]Previous / Next[/b] to step through matches — the status line shows the match number and the tile number to look for.
+[*]Console fallback (client context): [font=Courier New]Mods.CCNS_HairHeadSearch.CCNS_Search()[/font]
+[/list]
+See the included INSTALL.md for full step-by-step instructions, including how to make sure CCNS is active (not just in the Overrides pane).
+
+[line]
+
+[size=4][b]Compatibility[/b][/size]
+[list]
+[*][b]Appearance Edit Enhanced (AEE)[/b] and the [b]Magic Mirror[/b] — fully compatible; everything works in the mid-game appearance editor too.
+[*][b]Customizer's Compendium (mod 10) — incompatible[/b] (it fully replaces CCLib_k.xaml). Use the Patch 7 Ready version (mod [b]12111[/b]) instead.
+[*]Any mod that fully replaces CCLib_k.xaml or CCLib_c.xaml will conflict — load order decides which wins.
+[/list]
+
+[line]
+
+[size=4][b]Known limitations[/b][/size]
+[list]
+[*]Matches are shown by [b]number[/b], not highlighted in the grid — the game's hair/head collections are read-only at runtime, so the mod can't glow or hide tiles. Tile numbers + Next/Previous are the workaround.
+[*]Only [b]modded[/b] tiles are numbered; base-game tiles are left clean.
+[*]An option the game doesn't attribute to a mod source shows as "Vanilla."
+[*]CCNS must be [b]active in your load order[/b] (not just the Overrides pane) for the script-driven features to appear.
+[/list]
+
+[line]
+
+[size=4][b]Credits[/b][/size]
+[list]
+[*][b]Author:[/b] Serpentine (SerpentineShel)
+[*][b]BG3 Script Extender:[/b] Norbyte
+[*][b]BG3 ImprovedUI[/b] and its Patch 8 fork maintainers
+[*][b]Larian Studios[/b] — the base character-creation UI this mod extends
+[*]Thanks to the BG3 modding community for testing and feedback.
+[/list]
+
+[size=4][b]AI use disclosure[/b][/size]
+CCNS was developed with substantial assistance from an AI coding assistant (Claude, by Anthropic) for code, research, and documentation. It contains [b]no AI-generated art, images, audio, or other media[/b] — only code and text. All design decisions, testing, and the final release were done by the author.
+
+[size=4][b]License[/b][/size]
+MIT (original CCNS code/content). Includes a modified copy of Larian's character-creation UI files; see LICENSE-THIRD-PARTY.md in the download.
