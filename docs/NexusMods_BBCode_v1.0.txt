@@ -71,5 +71,9 @@ See the included INSTALL.md for full step-by-step instructions, including how to
 [size=4][b]AI use disclosure[/b][/size]
 CCNS was developed with substantial assistance from an AI coding assistant (Claude, by Anthropic) for code, research, and documentation. It contains [b]no AI-generated art, images, audio, or other media[/b] — only code and text. All design decisions, testing, and the final release were done by the author.
 
+[size=4][b]Source code[/b][/size]
+CCNS is open source. Full source (UI files, Script Extender Lua, build scripts, docs) is on GitHub:
+[url=https://github.com/Shiney1965/BG3-CC-Mod-Head-and-Hair]github.com/Shiney1965/BG3-CC-Mod-Head-and-Hair[/url]
+
 [size=4][b]License[/b][/size]
 MIT (original CCNS code/content). Includes a modified copy of Larian's character-creation UI files; see LICENSE-THIRD-PARTY.md in the download.

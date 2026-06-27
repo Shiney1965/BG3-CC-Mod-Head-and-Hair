@@ -94,13 +94,19 @@ A: "CC Name & Search" — character-creation name labels plus search.
 
 CCNS was developed with substantial assistance from an AI coding assistant (Claude, by Anthropic), used for code authoring (Script Extender Lua and XAML edits), research, and this documentation. The mod contains **no AI-generated art, images, audio, or other media** — only code and text. All design decisions, in-game testing, and the final release were done by the author.
 
+## Source code
+
+CCNS is open source. The full source — UI files, Script Extender Lua, build scripts, and these documents — lives on GitHub:
+
+<https://github.com/Shiney1965/BG3-CC-Mod-Head-and-Hair>
+
 ## License
 
 MIT. See `LICENSE`. The mod includes a modified copy of Larian's character-creation UI files; see `LICENSE-THIRD-PARTY.md`.
 
 ## Reporting issues
 
-Drop a comment on the NexusMods listing. When reporting, please include:
+Drop a comment on the NexusMods listing, or open an issue on the [GitHub repository](https://github.com/Shiney1965/BG3-CC-Mod-Head-and-Hair). When reporting, please include:
 
 - Your BG3 version and Script Extender version.
 - Whether you are on keyboard or controller.
