@@ -8,7 +8,7 @@ Adds **name labels, mod-of-origin info, tile numbers, and an in-game search pane
   Lydia's Heads          Vanilla                HairUnlocked
 ```
 
-If you run a lot of hair and head mods, you have probably scrolled through hundreds of near-identical thumbnails with no idea which mod a style came from or where in the grid it was. CCNS puts a readable name and source-mod under every tile, numbers the modded ones, and gives you a search box that filters by name **or** by source mod and walks you through the matches.
+If you run a lot of hair and head mods, you have probably scrolled through hundreds of near-identical thumbnails with no idea which mod a style came from or where in the grid it was. CCNS puts a readable name and source-mod under every tile, numbers them all in grid order, and gives you a search box that filters by name **or** by source mod and walks you through the matches.
 
 ## ➤ How to use — please read this
 
@@ -30,7 +30,7 @@ Baldur's Gate 3 reuses ("recycles") the thumbnail tiles as you scroll, and it on
 
 - **Name label on every hair and head tile** — single line, trimmed with an ellipsis if long; the full name is always available on hover via the tile's normal tooltip.
 - **Mod-of-origin line** under the name, resolved per tile from the game's appearance-visual data (e.g. *Lydia's Heads*, *HairUnlocked*, *Poesielibre's Heads*). Base-game options read as *Vanilla*.
-- **Grid tile numbers** — each modded hair/head tile is numbered (`#1`, `#2`, …) so you can match a search result to its place in the grid (see the round-trip note above).
+- **Grid tile numbers** — all head and hair options are numbered (`#1`, `#2`, …) in the order they appear in the CC grid, so you can match a search result to its place in the grid (see the round-trip note above).
 - **In-game search panel** — a lightweight overlay opened with `Ctrl+Shift+H` that lists every hair/head with its name, source mod, and tile number. Type to filter by name or by mod; click a result to apply it instantly; or step through matches with **Previous / Next**.
 - **Brighter selection ring** on the currently-selected tile (keyboard/mouse layout).
 - **Keyboard and controller** — the labels and numbers render in both the keyboard and controller character-creation UI. (The search panel itself is a keyboard/mouse feature — see *Controller* below.)
@@ -79,8 +79,7 @@ Nothing is written to your save. All text and UI changes are applied at runtime 
 
 - **The tile numbers appear after a Head↔Hair tab round-trip** (usually 1–2), because BG3 recycles the thumbnail tiles and only repaints their labels when a tab is rebuilt. This is a one-time step per character-creation session — see *How to use* above.
 - **The search panel is opened by hotkey; it does not pop open automatically.** This is deliberate — an always-on check to auto-open it added a constant background cost and log spam, so CCNS uses the on-demand `Ctrl+Shift+H` hotkey instead.
-- **Matches are shown by number, not highlighted in the grid.** The game's hair/head tile collections are read-only at runtime, so CCNS cannot draw a glow on matching tiles, hide non-matches, or scroll the grid to a match. Instead, each modded tile is numbered and the search panel's **Next / Previous** navigation tells you which numbered tile to look at. This is a hard engine limitation.
-- **Only modded tiles are numbered.** Base-game (vanilla) hair/head options are intentionally left unnumbered to keep the grid clean and avoid touching base-game text.
+- **Matches are shown by number, not highlighted in the grid.** The game's hair/head tile collections are read-only at runtime, so CCNS cannot draw a glow on matching tiles, hide non-matches, or scroll the grid to a match. Instead, each tile is numbered and the search panel's **Next / Previous** navigation tells you which numbered tile to look at. This is a hard engine limitation.
 - **Some options may read as *Vanilla*.** Mod-of-origin is resolved from the engine's appearance-visual source data. An option the game does not attribute to a specific mod source will show as *Vanilla*.
 - **The mod must be active in your load order** for any of this to appear. As a base-game-file override it can otherwise sit in your manager's Overrides pane, where its Script Extender script does not run. See `INSTALL.md`.
 
