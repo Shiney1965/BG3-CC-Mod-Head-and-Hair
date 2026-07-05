@@ -10,10 +10,10 @@ CCNS ships modified copies of two Baldur's Gate 3 character-creation UI library 
 
 CCNS requires the **BG3 Script Extender** by [Norbyte](https://github.com/Norbyte/bg3se) to run. The Script Extender is **not bundled** with CCNS — users install it themselves. All rights remain with its author.
 
-## BG3 ImprovedUI — required dependency (not included)
+## BG3 ImprovedUI — recommended companion (not included, not required)
 
-CCNS requires **BG3 ImprovedUI** (the Patch 8 fork, NexusMods mod 16649). It is **not bundled** with CCNS — users install it themselves. All rights remain with its authors and maintainers.
+CCNS is built and tested alongside **BG3 ImprovedUI** (the Patch 8 fork, NexusMods mod 16649), but does **not** require it — CCNS runs on its own. ImprovedUI is **not bundled** with CCNS; users who want it install it themselves. All rights remain with its authors and maintainers.
 
 ## Summary
 
-CCNS bundles no third-party binaries or tools. The only included third-party material is the modified Larian UI files described above. The Script Extender and ImprovedUI are external dependencies that the user installs separately.
+CCNS bundles no third-party binaries or tools. The only included third-party material is the modified Larian UI files described above. The Script Extender is a required external dependency the user installs separately; ImprovedUI is an optional, recommended companion.

@@ -6,15 +6,27 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 
 [line]
 
+[size=4][b]How to use — please read[/b][/size]
+[b]TO USE THE SEARCH PANEL, PRESS Ctrl+Shift+H WHILE ON THE HEAD OR HAIR SCREEN. THEN CLICK BACK AND FORTH BETWEEN THE HAIR AND HEAD TABS UNTIL THE NUMBERS APPEAR ON THE THUMBNAILS IN BOTH — USUALLY 1–2 ROUND TRIPS.[/b]
+[list]
+[*]The numbers should be [b]permanently assigned[/b]; if they are ever removed during the game, just repeat this round trip when you re-enter the CC panels.
+[*][b]Type[/b] in the box to filter by hair/head name or source mod.
+[*][b]Click[/b] a result to apply it; or use [b]Previous / Next[/b] to step through matches — the status line shows the match number and the tile number to look for.
+[*]You can [b]close and reopen[/b] the panel any time with Ctrl+Shift+H while on the Head or Hair screen. The hotkey does nothing on other screens (by design).
+[/list]
+[i]Why the tab round-trip?[/i] BG3 recycles the thumbnail tiles and only repaints their labels when a tab is rebuilt, so a quick Head↔Hair switch is what makes the numbers show up.
+
+[line]
+
 [size=4][b]Features[/b][/size]
 [list]
 [*][b]Name label on every hair and head tile[/b] — single line, trimmed if long; full name on hover.
 [*][b]Mod-of-origin line[/b] under the name (e.g. Lydia's Heads, HairUnlocked, Poesielibre's Heads). Base-game options read as "Vanilla."
 [*][b]Tile numbers[/b] on modded hair/head tiles, so search results map to a spot in the grid.
-[*][b]In-game search panel[/b] — filter by name or source mod, click a result to apply it instantly, or step through matches with Previous / Next.
-[*][b]Brighter selection ring[/b] on the active tile.
-[*][b]Keyboard and controller[/b] supported.
-[*][b]Zero gameplay impact[/b] — cosmetic / informational only; nothing is written to your save.
+[*][b]In-game search panel[/b] (Ctrl+Shift+H) — filter by name or source mod, click a result to apply it instantly, or step through matches with Previous / Next.
+[*][b]Brighter selection ring[/b] on the active tile (keyboard/mouse layout).
+[*][b]Keyboard and controller[/b] — labels and numbers render in both.
+[*][b]Zero gameplay impact[/b] — cosmetic / informational only; no background polling; nothing is written to your save.
 [/list]
 
 [line]
@@ -23,26 +35,25 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 [list]
 [*]Baldur's Gate 3, Patch 8 or later.
 [*][b]BG3 Script Extender[/b] (version 29+). Required — drives the labels, numbering, and search panel.
-[*][b]BG3 ImprovedUI[/b] — the Patch 8 fork (mod [b]16649[/b]). Required.
 [*]A mod manager (e.g. BG3 Mod Manager) — strongly recommended, because CCNS must be [b]active in your load order[/b] for its script to run.
 [/list]
+[b]Recommended (not required):[/b] BG3 ImprovedUI — the Patch 8 fork (mod [b]16649[/b]). CCNS runs without it, but they're tested together.
 
 [line]
 
-[size=4][b]How to use[/b][/size]
+[size=4][b]Controller[/b][/size]
 [list]
-[*]Open / close the search panel with [b]Ctrl + Shift + H[/b] on any character-creation screen (it also auto-opens in New Game character creation).
-[*][b]Type[/b] to filter by hair/head name or source mod.
-[*][b]Click[/b] a result to apply it; or use [b]Previous / Next[/b] to step through matches — the status line shows the match number and the tile number to look for.
-[*]Console fallback (client context): [font=Courier New]Mods.CCNS_HairHeadSearch.CCNS_Search()[/font]
+[*]The name/mod labels and the thumbnail numbers [b]render on the controller layout[/b].
+[*]The [b]search panel is keyboard/mouse only[/b] (it's a mouse-driven overlay); numbering is baked when you open the panel, so it's keyboard/mouse-driven too.
+[*]The [b]brighter selection ring is keyboard-layout only[/b] — controllers get the game's normal highlight.
 [/list]
-See the included INSTALL.md for full step-by-step instructions, including how to make sure CCNS is active (not just in the Overrides pane).
 
 [line]
 
 [size=4][b]Compatibility[/b][/size]
 [list]
-[*][b]Appearance Edit Enhanced (AEE)[/b] and the [b]Magic Mirror[/b] — fully compatible; everything works in the mid-game appearance editor too.
+[*][b]Appearance Edit Enhanced (AEE)[/b] and the [b]Magic Mirror[/b] — compatible; everything works in the mid-game appearance editor too (open the panel with Ctrl+Shift+H on the Head/Hair screen).
+[*][b]BG3 ImprovedUI[/b] — compatible and recommended.
 [*][b]Customizer's Compendium (mod 10) — incompatible[/b] (it fully replaces CCLib_k.xaml). Use the Patch 7 Ready version (mod [b]12111[/b]) instead.
 [*]Any mod that fully replaces CCLib_k.xaml or CCLib_c.xaml will conflict — load order decides which wins.
 [/list]
@@ -51,7 +62,9 @@ See the included INSTALL.md for full step-by-step instructions, including how to
 
 [size=4][b]Known limitations[/b][/size]
 [list]
-[*]Matches are shown by [b]number[/b], not highlighted in the grid — the game's hair/head collections are read-only at runtime, so the mod can't glow or hide tiles. Tile numbers + Next/Previous are the workaround.
+[*]Tile numbers appear after a [b]Head↔Hair tab round-trip[/b] (1–2) — BG3 recycles tiles and only repaints labels on a tab rebuild. One-time step per session.
+[*]The panel is [b]opened by hotkey[/b]; it does not auto-open (an always-on check to auto-open added a constant background cost, so it was removed).
+[*]Matches are shown by [b]number[/b], not highlighted in the grid — the game's hair/head collections are read-only at runtime, so the mod can't glow, hide, or scroll to tiles. Tile numbers + Next/Previous are the workaround.
 [*]Only [b]modded[/b] tiles are numbered; base-game tiles are left clean.
 [*]An option the game doesn't attribute to a mod source shows as "Vanilla."
 [*]CCNS must be [b]active in your load order[/b] (not just the Overrides pane) for the script-driven features to appear.
