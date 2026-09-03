@@ -1,5 +1,10 @@
 [size=5][b]CCNS — CC Hair & Head Search[/b][/size]
 
+[size=4][b]New in 1.1.0 — Show current Head/Hair[/b][/size]
+[b]The search panel now has a "Show current Head/Hair" button that filters the list to the option you currently have equipped — the current hair on the Hair screen, the current head on the Head screen — and shows its exact thumbnail number, so you can find the active style in the grid without hunting for the gold-outlined tile.[/b] Clear it again with Refresh, by typing in the search box, by toggling a source-mod filter, with "Show all mods," or by reopening the panel.
+
+[line]
+
 [b]Name labels, mod-of-origin info, tile numbers, and an in-game search panel for the character-creation hair and head pickers.[/b]
 
 If you run a lot of hair and head mods, you have probably scrolled through hundreds of near-identical thumbnails with no idea which mod a style came from or where it was in the grid. CCNS puts a readable [b]name[/b] and [b]source mod[/b] under every hair/head tile, numbers them all in grid order, and adds a [b]search box[/b] that filters by name or by mod and walks you through the matches.
@@ -11,6 +16,7 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 [list]
 [*]The numbers should be [b]permanently assigned[/b]; if they are ever removed during the game, just repeat this round trip when you re-enter the CC panels.
 [*][b]Type[/b] in the box to filter by hair/head name or source mod.
+[*][b]Show current Head/Hair[/b] — click this button to filter the list to the hair or head you currently have equipped and read off its thumbnail number. Clear it with Refresh, typing, a source-mod filter, "Show all mods," or by reopening the panel.
 [*][b]Click[/b] a result to apply it; or use [b]Previous / Next[/b] to step through matches — the status line shows the match number and the tile number to look for.
 [*]You can [b]close and reopen[/b] the panel any time with Ctrl+Shift+H while on the Head or Hair screen. The hotkey does nothing on other screens (by design).
 [/list]
@@ -24,6 +30,7 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 [*][b]Mod-of-origin line[/b] under the name (e.g. Lydia's Heads, HairUnlocked, Poesielibre's Heads). Base-game options read as "Vanilla."
 [*][b]Tile numbers[/b] on all hair/head tiles, in the order they appear in the grid, so search results map to a spot in the grid.
 [*][b]In-game search panel[/b] (Ctrl+Shift+H) — filter by name or source mod, click a result to apply it instantly, or step through matches with Previous / Next.
+[*][b]Show current Head/Hair[/b] (new in 1.1.0) — filter the list to the option you currently have equipped and read its thumbnail number, so you can find the active style in the grid without scrolling for the gold-outlined tile.
 [*][b]Brighter selection ring[/b] on the active tile (keyboard/mouse layout).
 [*][b]Keyboard and controller[/b] — labels and numbers render in both.
 [*][b]Zero gameplay impact[/b] — cosmetic / informational only; no background polling; nothing is written to your save.
@@ -44,7 +51,7 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 [size=4][b]Controller[/b][/size]
 [list]
 [*]The name/mod labels and the thumbnail numbers [b]render on the controller layout[/b].
-[*]The [b]search panel is keyboard/mouse only[/b] (it's a mouse-driven overlay); numbering is baked when you open the panel, so it's keyboard/mouse-driven too.
+[*]The [b]search panel is keyboard/mouse only[/b] (it's a mouse-driven overlay); numbering is baked when you open the panel, so it's keyboard/mouse-driven too. The [b]Show current Head/Hair[/b] button is part of that panel, so it is keyboard/mouse only as well.
 [*]The [b]brighter selection ring is keyboard-layout only[/b] — controllers get the game's normal highlight.
 [/list]
 
@@ -64,7 +71,7 @@ If you run a lot of hair and head mods, you have probably scrolled through hundr
 [list]
 [*]Tile numbers appear after a [b]Head↔Hair tab round-trip[/b] (1–2) — BG3 recycles tiles and only repaints labels on a tab rebuild. One-time step per session.
 [*]The panel is [b]opened by hotkey[/b]; it does not auto-open (an always-on check to auto-open added a constant background cost, so it was removed).
-[*]Matches are shown by [b]number[/b], not highlighted in the grid — the game's hair/head collections are read-only at runtime, so the mod can't glow, hide, or scroll to tiles. Tile numbers + Next/Previous are the workaround.
+[*]Matches are shown by [b]number[/b], not highlighted in the grid — the game's hair/head collections are read-only at runtime, so the mod can't glow, hide, or scroll to tiles. Tile numbers, Next/Previous, and Show current Head/Hair are the workaround.
 [*]An option the game doesn't attribute to a mod source shows as "Vanilla."
 [*]CCNS must be [b]active in your load order[/b] (not just the Overrides pane) for the script-driven features to appear.
 [/list]

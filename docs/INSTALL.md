@@ -11,7 +11,7 @@ CCNS installs like a normal `.pak` mod, with one important step: it must be **ac
 
 ## Install
 
-1. **Download and unzip** `CCNS-1.0.0.zip`. Inside you'll find `CCNS_HairHeadSearch.pak` plus these documents.
+1. **Download and unzip** `CCNS-1.1.0.zip`. Inside you'll find `CCNS_HairHeadSearch.pak` plus these documents.
 
 2. **Copy the `.pak` into your BG3 Mods folder.** Open File Explorer, paste this into the address bar, and press Enter:
    ```
@@ -32,6 +32,7 @@ CCNS installs like a normal `.pak` mod, with one important step: it must be **ac
 
 - **Open / close the search panel:** `Ctrl + Shift + H`, while on the Head or Hair screen. The hotkey does nothing on other screens (by design); closing works anywhere.
 - **Search:** type in the panel's box to filter by hair/head **name** or **source mod**.
+- **Show current Head/Hair:** click the button to filter the list to the hair or head you currently have equipped and read off its thumbnail number, so you can find the active style in the grid. Clear the filter with **Refresh**, by typing, by toggling a source-mod filter, with **Show all mods**, or by reopening the panel.
 - **Apply a result:** click it — the hair/head changes immediately.
 - **Walk through matches:** **Previous / Next** buttons; the status line shows the match number and the tile number to look for in the grid.
 
@@ -41,7 +42,7 @@ CCNS installs like a normal `.pak` mod, with one important step: it must be **ac
 
 - Confirm **Script Extender is loaded** (its console window appears when BG3 runs). Without it, CCNS does nothing.
 - Confirm **CCNS is in your active load order**, not the Overrides pane (see step 3 above). This is the single most common cause.
-- Check the Script Extender console for a `[CCNS] v11.11 loaded …` line at startup. If it's absent, the script isn't loading — re-check load order.
+- Check the Script Extender console for a `[CCNS] CCNS v11.14 loaded …` line at startup. If it's absent, the script isn't loading — re-check load order.
 
 ### The panel opens, but the thumbnails have no numbers
 
